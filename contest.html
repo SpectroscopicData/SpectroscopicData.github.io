@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>[3] EMSLIBS classification contest - Spectroscopic data</title>
+    <title>[4] EMSLIBS classification contest - Spectroscopic data</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,14 +13,14 @@
 
         <meta name="author" content="Jakub Vrabel & Erik Kepes" />
         <meta name="keywords" content="Spectroscopy,Data,Machine Learning,Contest" />
-        <meta name="description" content="Let&#39;s remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging dataset and organized intergroup classification contest. The contest achieved nice participation and attention, but more importantly served to the community to push limits and also educate. Now, we (as a community) can discuss what are the limitations, weak and strong parts of LIBS method concerning classification. Also, great deal of inspiration following from the published report, is available to everyone." />
+        <meta name="description" content="Let&#39;s remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging benchmark dataset, which was used for the classification contest. An extensive report could be found in our recent paper, but for highlights, you are just at the right place. Unsurprisingly, the spectroscopic community was not missed out by the recent boom of modern machine learning approaches to data processing. Thus, we felt it was an ideal time to push the limits, compare performance, and also share knowledge across the community." />
 
         <meta property="og:site_name" content="Spectroscopic data" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="[3] EMSLIBS classification contest"/>
+        <meta property="og:title" content="[4] EMSLIBS classification contest"/>
         <meta property="og:url" content="https://spectroscopicdata.github.io/contest.html"/>
-        <meta property="og:description" content="Let&#39;s remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging dataset and organized intergroup classification contest. The contest achieved nice participation and attention, but more importantly served to the community to push limits and also educate. Now, we (as a community) can discuss what are the limitations, weak and strong parts of LIBS method concerning classification. Also, great deal of inspiration following from the published report, is available to everyone."/>
-        <meta property="article:published_time" content="2020-04-16" />
+        <meta property="og:description" content="Let&#39;s remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging benchmark dataset, which was used for the classification contest. An extensive report could be found in our recent paper, but for highlights, you are just at the right place. Unsurprisingly, the spectroscopic community was not missed out by the recent boom of modern machine learning approaches to data processing. Thus, we felt it was an ideal time to push the limits, compare performance, and also share knowledge across the community."/>
+        <meta property="article:published_time" content="2020-04-30" />
             <meta property="article:section" content="Benchmarking" />
             <meta property="article:tag" content="Spectroscopy" />
             <meta property="article:tag" content="Data" />
@@ -66,7 +66,7 @@ Spectroscopic data            </a>
                             <a href="https://spectroscopicdata.github.io/category/benchmarking.html">Benchmarking</a>
                         </li>
                         <li >
-                            <a href="https://spectroscopicdata.github.io/category/hands-on-python.html">Hands on python</a>
+                            <a href="https://spectroscopicdata.github.io/category/hands-on-python.html">Hands-on python</a>
                         </li>
                         <li >
                             <a href="https://spectroscopicdata.github.io/category/spectroscopy.html">Spectroscopy</a>
@@ -92,8 +92,8 @@ Spectroscopic data            </a>
                 <h1>
                     <a href="https://spectroscopicdata.github.io/contest.html"
                        rel="bookmark"
-                       title="Permalink to [3] EMSLIBS classification contest">
-                        [3] EMSLIBS classification contest
+                       title="Permalink to [4] EMSLIBS classification contest">
+                        [4] EMSLIBS classification contest
                     </a>
                 </h1>
             </header>
@@ -103,7 +103,7 @@ Spectroscopic data            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2020-04-16T20:00:00+02:00"> Thu 16 April 2020</time>
+        <i class="fa fa-calendar"></i><time datetime="2020-04-30T20:00:00+02:00"> Thu 30 April 2020</time>
     </span>
 
 
@@ -1098,12 +1098,13 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging dataset and organized intergroup classification contest. 
-<img alt="EMSLIBS contest" src="https://github.com/JVrabel/EMSLIBS_contest/blob/master/contest.emslibs.jpg?raw=true" /></p>
-<p>The contest achieved nice participation and attention, but more importantly served to the community to push limits and also educate. Now, we (as a community) can discuss what are the limitations, weak and strong parts of LIBS method concerning classification. Also, great deal of inspiration following from the published report, is available to everyone.</p>
-<p>-results</p>
-<p>-highlights from methods</p>
-<p>-what will be next?</p>
+<p>Let's remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging <a href="https://spectroscopicdata.github.io/benchmark.html">benchmark dataset</a>, which was used for the classification contest. An extensive report could be found in our <a href="https://doi.org/10.1016/j.sab.2020.105872">recent paper</a>, but for highlights, you are just at the right place.</p>
+<p><img src="https://github.com/JVrabel/EMSLIBS_contest/blob/master/contest.emslibs.jpg?raw=true" width="900" /></p>
+<p>Unsurprisingly, the spectroscopic community was not missed out by the recent boom of modern machine learning approaches to data processing. Thus, we felt it was an ideal time to push the limits, compare performance, and also share knowledge across the community.</p>
+<h3 id="Out-of-sample-classification">Out-of-sample classification<a class="anchor-link" href="#Out-of-sample-classification">¶</a></h3><p>The cornerstone of the contest task is the so-called <em>out-of-sample classification</em>. This basic concept is rather simple and well known in general machine learning, but it is useful to look closer to its spectroscopic context. Unfortunately, there are some papers published, which violates even the simplest out-of-sample principle (test spectra are used for model training). In such a case, the presented classification performance posses no valid information, and a model is completely useless.</p>
+<p>However, to translate the "true" out-of-sample task to spectroscopy, even spectra previously unseen by the model, but measured from the same (homogeneous) sample, as other spectra used for training the model, should be <strong>restricted from test dataset</strong>. The reasoning behind this idea is simple. Having a robust experimental setup, only the intensity of spectra fluctuates slightly, but the position of spectral features remains unchanged. So, to achieve "true" out-of-sample performance, the model has to be able to generalize to spectra from new samples. Of course, those samples have to be somehow related to "training" ones. In our case, one category (or class) was composed of several physical samples of mineral powders (e.g., hematite) with slightly varying compositions allowed by this geological classification. Thus, out-of-sample classification in this task could be thought of as "according to the elemental composition". <strong>Only this kind of classification should be considered and posses real challenge</strong>, which <strong>IS NOT TRUE</strong> for two previously mentioned kinds (1. test spectra used for model training, 2. test spectra from the same homogeneous sample as training ones).</p>
+<h3 id="What-is-the-best-model-for-this-task?">What is the best model for this task?<a class="anchor-link" href="#What-is-the-best-model-for-this-task?">¶</a></h3><p>Well, this is a tough question... Seemingly, simpler models (PLS-DA, LDA)  obtained slightly better performances than more up-to-date ones (ANN-based models), but with considerable data preprocessing. Especially, spectroscopic expertise and handcrafted feature selection were key factors in finding important information in the data. Leaving all work to the model (feature selection by autoencoders, UMAP and more techniques) is a highly elegant approach, but still, some minor improvements are necessary to overcome spectroscopic approaches. A detailed description of all approaches is provided in the <a href="https://doi.org/10.1016/j.sab.2020.105872">publication</a>, so you are welcome to try it at home.</p>
+<h3 id="What-will-be-next?">What will be next?<a class="anchor-link" href="#What-will-be-next?">¶</a></h3><p>Currently, we are working on a small improvements of the original contest/benchmark engine, where you will be able to check your performance and obtain some useful feedback (in short time will be accessible <a href="http://libs.ceitec.cz/benchmarking/">here</a>). For long-term period, we are preparing something new. You may expect completely new challenge aimed to even broader audience.</p>
 <hr>
 <hr>
 </hr></hr></div>
@@ -1115,8 +1116,8 @@ h6:hover .anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>References</p>
-<p>[1] Vrabel et. al., <a href="link">Contest paper ... </a></p>
-<p>[2] Kepes et. al., <a href="https://www.nature.com/articles/s41597-020-0396-8">Benchmark classification dataset for laser-induced breakdown spectroscopy</a></p>
+<p>[1] Vrabel et. al., <a href="https://doi.org/10.1016/j.sab.2020.105872">Contest paper</a></p>
+<p>[2] Kepes et. al., <a href="https://www.nature.com/articles/s41597-020-0396-8">Benchmark paper</a></p>
 </div>
 </div>
 </div>

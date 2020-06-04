@@ -58,7 +58,7 @@ Spectroscopic data            </a>
                             <a href="https://spectroscopicdata.github.io/category/benchmarking.html">Benchmarking</a>
                         </li>
                         <li >
-                            <a href="https://spectroscopicdata.github.io/category/hands-on-python.html">Hands on python</a>
+                            <a href="https://spectroscopicdata.github.io/category/hands-on-python.html">Hands-on python</a>
                         </li>
                         <li >
                             <a href="https://spectroscopicdata.github.io/category/spectroscopy.html">Spectroscopy</a>
@@ -86,48 +86,44 @@ Spectroscopic data            </a>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Welcome back in our Hands on section for processing of spectroscopic data in Python. At this point, we suppose you have already went through last article, considering data formats and importing. You should have imported contest dataset and loaded following variables:</p>
+<p>Welcome back in our <a href="https://spectroscopicdata.github.io/category/hands-on-python.html">Hands-on</a> section for processing of spectroscopic data in Python. At this point, we suppose you have already gone through the last <a href="https://spectroscopicdata.github.io/python1.html">post</a>, considering data formats and importing. You should have imported the <a href="https://spectroscopicdata.github.io/benchmark.html">benchmark dataset</a> and loaded the following variables:</p>
 <ul>
 <li><code>trainData</code></li>
 <li><code>trainClass</code></li>
 <li><code>wavelengths</code></li>
 <li><code>testData</code></li>
 </ul>
-<p>Today, we will use all mentioned variables except testData. Firstly, just simple plotting and visualization, followed by demonstration of the PCA.</p>
+<p>Today, we will use all mentioned variables except testData. Firstly, just simple plotting and visualization, followed by the demonstration of the PCA algorithm.</p>
                     <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/python2.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://spectroscopicdata.github.io/python22.html">[5-2] Py:Visualization and PCA</a></h2>
+                <h2><a href="https://spectroscopicdata.github.io/contest.html">[4] EMSLIBS classification contest</a></h2>
                 <div class="summary">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As was promised, we will continue with simple PCA implementation using <a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html"><code>scikit-learn</code></a> library.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-                    <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/python22.html">more ...</a>
+<p>Let's remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging <a href="https://spectroscopicdata.github.io/benchmark.html">benchmark dataset</a>, which was used for the classification contest. An extensive report could be found in our <a href="https://doi.org/10.1016/j.sab.2020.105872">recent paper</a>, but for highlights, you are just at the right place.</p>
+<p><img src="https://github.com/JVrabel/EMSLIBS_contest/blob/master/contest.emslibs.jpg?raw=true" width="900" /></p>
+<p>Unsurprisingly, the spectroscopic community was not missed out by the recent boom of modern machine learning approaches to data processing. Thus, we felt it was an ideal time to push the limits, compare performance, and also share knowledge across the community.</p>
+                    <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/contest.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://spectroscopicdata.github.io/contest.html">[3] EMSLIBS classification contest</a></h2>
+                <h2><a href="https://spectroscopicdata.github.io/python1.html">[3] Py:Loading data</a></h2>
                 <div class="summary">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's remind EMSLIBS 2019 conference in Brno a bit. As a part of the program, we have prepared challenging dataset and organized intergroup classification contest. 
-<img alt="EMSLIBS contest" src="https://github.com/JVrabel/EMSLIBS_contest/blob/master/contest.emslibs.jpg?raw=true" /></p>
-<p>The contest achieved nice participation and attention, but more importantly served to the community to push limits and also educate. Now, we (as a community) can discuss what are the limitations, weak and strong parts of LIBS method concerning classification. Also, great deal of inspiration following from the published report, is available to everyone.</p>
-                    <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/contest.html">more ...</a>
+<h3 id="Exploring-the-benchmark-dataset">Exploring the benchmark dataset<a class="anchor-link" href="#Exploring-the-benchmark-dataset">¶</a></h3><p>Welcome back.</p>
+<p>In our <a href="https://spectroscopicdata.github.io/benchmark.html">previous post</a>, we introduced a spectroscopic dataset aimed at benchmarking classification models. In this post, we will load in that dataset. Thus, we will go through the script provided in the repository with the dataset. Then, we will go a step further by improving that script by making it faster. This will mark the beginning of a series of posts dealing with the processing of spectroscopic data in <code>python</code>
+                    <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/python1.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -139,25 +135,8 @@ Spectroscopic data            </a>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this post, we will introduce a spectroscopic benchmark dataset designed for classification. The benchmark consist of large number of LIBS spectra and served for the first classification contest inside LIBS community. We will talk about the contest soon, but now let's focus to the dataset.</p>
-<h2 id="Why-LIBS?">Why LIBS?<a class="anchor-link" href="#Why-LIBS?">¶</a></h2><p>In the case, you are not familiar with Laser-Induced Breakdown Spectroscopy (LIBS), it is a method where pulsed laser source is used to ablate the sample and create radiating plasma. This radiation is collected and imaged as a spectrum. The biggest advantage of the method is a speed of analysis (reported up to 1 kHz) and no need for sample preparation. These are the properties, making it ideal for collection of massive amounts of data.
-<img alt="Benchmark dataset" src="https://github.com/SpectroscopicData/content/blob/master/dataset.png?raw=true" /></p>
+<h2 id="Benchmark-classification-dataset-for-laser-induced-breakdown-spectroscopy">Benchmark classification dataset for laser-induced breakdown spectroscopy<a class="anchor-link" href="#Benchmark-classification-dataset-for-laser-induced-breakdown-spectroscopy">¶</a></h2><p>In our previous <a href="https://spectroscopicdata.github.io/helloworld.html">post</a>, we described the common characteristics of spectroscopic data (sparsity, redundancy, and high dimensionality). In this post, we describe a dataset that you can use to experiment with spectroscopic data and to get familiar with the challenges posed by its properties. In the following, we state the motivation behind the creation of the dataset and its properties.</p>
                     <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/benchmark.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://spectroscopicdata.github.io/benchmark2.html">[2] Benchmark dataset</a></h2>
-                <div class="summary">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In this post, we will introduce a spectroscopic benchmark dataset designed for classification. The benchmark consist of large number of LIBS spectra and served for the first classification contest inside LIBS community. We will talk about the contest soon, but now let's focus to the dataset.</p>
-<h2 id="Why-LIBS?">Why LIBS?<a class="anchor-link" href="#Why-LIBS?">¶</a></h2><p>In the case, you are not familiar with Laser-Induced Breakdown Spectroscopy (LIBS), it is a method where pulsed laser source is used to ablate the sample and create radiating plasma. This radiation is collected and imaged as a spectrum. The biggest advantage of the method is a speed of analysis (reported up to 1 kHz) and no need for sample preparation. These are the properties, making it ideal for collection of massive amounts of data.
-<img alt="Benchmark dataset" src="https://github.com/SpectroscopicData/content/blob/master/dataset.png?raw=true" /></p>
-                    <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/benchmark2.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -169,7 +148,7 @@ Spectroscopic data            </a>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Welcome-to-our-new-blog!">Welcome to our new blog!<a class="anchor-link" href="#Welcome-to-our-new-blog!">¶</a></h2><p>In this modern era of data science and machine learning, there are plenty of excellent resources for image processing, natural language processing and other exciting stuff. However, we have found out complete <strong>lack of content related to spectroscopic data</strong>. So, we have decided to create a platform to gather useful information about the processing of such data and notice you about new ideas in spectroscopy. Also, be prepared for some educational content (python/R code) and occasionally an interview with leading spectroscopists.</p>
+<h3 id="Welcome-to-our-new-blog!">Welcome to our new blog!<a class="anchor-link" href="#Welcome-to-our-new-blog!">¶</a></h3><p>In this modern era of data science and machine learning, there are plenty of excellent resources for image processing, natural language processing and other exciting stuff. However, we have found out complete <strong>lack of content related to spectroscopic data</strong>. So, we have decided to create a platform to gather useful information about the processing of such data and notice you about new ideas in spectroscopy. Also, be prepared for some educational content (python/R code) and occasionally an interview with leading spectroscopists.</p>
                     <a class="btn btn-default btn-xs" href="https://spectroscopicdata.github.io/helloworld.html">more ...</a>
                 </div>
             </article>
